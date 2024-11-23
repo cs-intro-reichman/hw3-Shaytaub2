@@ -38,7 +38,7 @@ public class LoanCalc {
 		 iterationCounter=0;
 		 while (endBalance(loan, rate, n, x)>epsilon)
 		 {
-			x++;;
+			x+=epsilon;
 			iterationCounter++;
 		 }
 
