@@ -90,14 +90,14 @@ public class Anagram {
 			}
 
 		}
-		
+		str = newSrt;
 		String sRandom = "";
 		int random =0;
-		for (int i=0; i<newSrt.length(); i++)
+		for (int i=0; i<str.length(); i++)
 		{
 			//if(temp.indexOf(newSrt.charAt(i))!= -1)
 			//{
-				random = (int) Math.random() * newSrt.length();
+				random = (int) (Math.random() * newSrt.length());
 				sRandom = sRandom + newSrt.charAt(random);
 				newSrt = newSrt.substring(0, random) + newSrt.substring(random + 1);
 
